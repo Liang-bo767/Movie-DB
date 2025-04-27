@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css"
+        integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <img src="logo.svg" alt="logo" />
+        <nav>
+            <ul>
+                <li class="active" id="home"><a href="#">HOME</a></li>
+                <li id="liked-list"><a href="#">LIKED</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="category">
+            <label for="category"></label>
+            <select name="category" id="category">
+                <option value="popular">Popular</option>
+                <option value="now_playing">Now Playing</option>
+                <option value="top_rated">Top Rated</option>
+                <option value="upcoming">Upcoming</option>
+            </select>
+        </div>
+
+        <div class="page">
+            <button id="previous">Prev</button>
+            <span id="page">1</span>
+            <button id="next">Next</button>
+        </div>
+
+        <div class="movie-container">
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <button class="modal-close">
+                    <i class="ion-ios-close-empty"></i>
+                </button>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
